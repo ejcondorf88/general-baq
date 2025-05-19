@@ -2,6 +2,11 @@
 
 Este repositorio contiene dos proyectos principales que conforman la aplicación BAQ Home: un frontend en React/TypeScript y un backend en NestJS.
 
+## Repositorios del Proyecto
+
+- Frontend: [baq-home](https://github.com/ejcondorf88/baq-home)
+- Backend: [baq-home-backend](https://github.com/ejcondorf88/baq-home-backend)
+
 ## Estructura del Repositorio
 
 ### Importante: Configuración de Git
@@ -149,6 +154,10 @@ JWT_SECRET=your-secret-key
 - PostgreSQL
 - Tailwind CSS
 - TypeORM
+
+### Estadísticas del Proyecto
+- Frontend: 94.2% TypeScript, 2.8% JavaScript, 1.9% CSS, 1.1% HTML
+- Backend: 98.1% TypeScript, 1.9% JavaScript
 
 ## Licencia
 
