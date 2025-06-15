@@ -29,11 +29,6 @@ rm -rf baq-home/.git
 ls -la .git
 ```
 
-3. Agrega todos los archivos al repositorio principal:
-```bash
-git add .
-git commit -m "Estructura monorepo configurada correctamente"
-```
 
 ### Estructura de Carpetas
 ```
@@ -46,7 +41,7 @@ git commit -m "Estructura monorepo configurada correctamente"
 
 1. **Clonar el Repositorio Principal**:
    ```bash
-   git clone <URL_DEL_REPOSITORIO_PRINCIPAL>
+   git clone https://github.com/ejcondorf88/general-baq.gitls
    ```
 
 2. **Clonar los Sub-repositorios**:
