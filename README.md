@@ -42,6 +42,58 @@ git commit -m "Estructura monorepo configurada correctamente"
 └── baq-home-backend/   # Backend (NestJS + TypeScript)
 ```
 
+## Pasos para Correr el Proyecto
+
+1. **Clonar el Repositorio Principal**:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO_PRINCIPAL>
+   ```
+
+2. **Clonar los Sub-repositorios**:
+   - Clonar el repositorio de frontend:
+     ```bash
+     git clone https://github.com/ejcondorf88/baq-home.git baq-home
+     ```
+   - Clonar el repositorio de backend:
+     ```bash
+     git clone https://github.com/ejcondorf88/baq-home-backend.git baq-home-backend
+     ```
+
+3. **Instalar Dependencias**:
+   - Para el frontend:
+     ```bash
+     cd baq-home
+     npm install
+     ```
+   - Para el backend:
+     ```bash
+     cd baq-home-backend
+     npm install
+     ```
+
+4. **Configurar Variables de Entorno**:
+   - Frontend: Crea un archivo `.env` en la carpeta `baq-home` con el siguiente contenido:
+     ```env
+     VITE_API_URL=http://localhost:3000
+     ```
+   - Backend: Crea un archivo `.env` en la carpeta `baq-home-backend` con el siguiente contenido:
+     ```env
+     DATABASE_URL=postgresql://user:password@localhost:5432/baq_home
+     JWT_SECRET=your-secret-key
+     ```
+
+5. **Iniciar el Desarrollo**:
+   - Frontend:
+     ```bash
+     cd baq-home
+     npm run dev
+     ```
+   - Backend:
+     ```bash
+     cd baq-home-backend
+     npm run start:dev
+     ```
+
 ## Frontend (baq-home)
 
 El frontend es una aplicación web moderna construida con:
@@ -162,3 +214,6 @@ JWT_SECRET=your-secret-key
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## Nota Importante
+Al clonar el repositorio principal, las carpetas de los sub-repositorios (`baq-home` y `baq-home-backend`) se generarán vacías. Para obtener el contenido completo de estos sub-repositorios, debes clonarlos por separado.
